@@ -1,0 +1,18 @@
+
+
+
+
+.main{
+
+margin-top: 200px;
+}
+
+
+
+.myOrdersHeading {
+color: blueviolet;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 300px;
+  }
