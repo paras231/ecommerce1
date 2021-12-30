@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const product = require("./routes/product");
 const errorMiddleware = require("./middleware/error");
 const user = require("./routes/user");
@@ -13,10 +13,12 @@ const cloudinary = require("cloudinary");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
 const path = require("path");
+const dotenv = require("dotenv");
+
 
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
-  require("dotenv").config({ path: "server/.env" });
+  require("dotenv").config({ path: "server/config/config.env" });
 }
 
 mongoose.connect(process.env.MONGO_URL, () => {
