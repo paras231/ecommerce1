@@ -4,12 +4,12 @@
 /client/.pnp.js
 /node_modules
 # testing
-/coverage
+/client/coverage
 
 # production
 /client/build
 
-/server/.env
+/server/config/config.env
 # misc
 /client/.DS_Store
 /client/.env.local
