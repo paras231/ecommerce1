@@ -12,6 +12,7 @@ const cors = require("cors");
 const cloudinary = require("cloudinary");
 const bodyParser = require("body-parser");
 const fileUpload = require("express-fileupload");
+const path = require("path");
 
 // Config
 if (process.env.NODE_ENV !== "PRODUCTION") {
